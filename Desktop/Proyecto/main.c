@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #define NUM_PREGUNTAS 6 
-void preguntarAnysComedia() {
+void preguntarComedia() {
     char respuesta;
     printf("¿De qué año se inventó la comedia? (a) 500 a.C. (b) 1000 d.C. (c) 1500 d.C.\n");
     printf("Respuesta: ");
@@ -14,7 +14,7 @@ void preguntarAnysComedia() {
     }
 }
 
-void preguntarAnysAccion() {
+void preguntarAccion() {
     char respuesta;
     printf("¿Qué año se estrenó la serie 'Juego de Tronos'? (a) 2011 (b) 2015 (c) 2019\n");
     printf("Respuesta: ");
@@ -26,7 +26,7 @@ void preguntarAnysAccion() {
     }
 }
 
-void preguntarAnysDrama() {
+void preguntarDrama() {
     char respuesta;
     printf("¿En qué año se lanzó 'Breaking Bad'? (a) 2008 (b) 2010 (c) 2012\n");
     printf("Respuesta: ");
@@ -38,7 +38,7 @@ void preguntarAnysDrama() {
     }
 }
 
-void preguntarAnysRomantica() {
+void preguntarRomantica() {
     char respuesta;
     printf("¿Cuál es la serie romántica basada en un libro de Diana Gabaldon? (a) Outlander (b) Bridgerton (c) Gossip Girl\n");
     printf("Respuesta: ");
@@ -50,7 +50,7 @@ void preguntarAnysRomantica() {
     }
 }
 
-void preguntarAnysThriller() {
+void preguntarThriller() {
     char respuesta;
     printf("¿Qué serie de thriller sigue a un asesino en serie que es un agente de la ley? (a) You (b) Mindhunter (c) Ozark\n");
     printf("Respuesta: ");
@@ -62,7 +62,7 @@ void preguntarAnysThriller() {
     }
 }
 
-void preguntarAnysCienciaFiccion() {
+void preguntarCienciaFiccion() {
     char respuesta;
     printf("¿En qué año se lanzó 'Stranger Things'? (a) 2015 (b) 2016 (c) 2017\n");
     printf("Respuesta: ");
@@ -91,42 +91,42 @@ void preguntesInicials(int usadas[]) {
                 printf("La serie que estás pensando es de comedia? (s/n)\n");
                 scanf(" %c", &respuesta);
                 if (respuesta == 'Si') {
-                    preguntarAnysComedia();
+                    preguntarComedia();
                 }
                 break;
             case 1: // Acción
                 printf("La serie que estás pensando es de acción? (s/n)\n");
                 scanf(" %c", &respuesta);
                 if (respuesta == 'Si') {
-                    preguntarAnysAccion();
+                    preguntarAccion();
                 }
                 break;
             case 2: // Drama
                 printf("La serie que estás pensando es un drama? (s/n)\n");
                 scanf(" %c", &respuesta);
                 if (respuesta == 'Si') {
-                    preguntarAnysDrama();
+                    preguntarDrama();
                 }
                 break;
             case 3: // Romántica
                 printf("La serie tiene una trama romántica? (s/n)\n");
                 scanf(" %c", &respuesta);
                 if (respuesta == 'Si') {
-                    preguntarAnysRomantica();
+                    preguntarRomantica();
                 }
                 break;
             case 4: // Thriller
                 printf("La serie es un thriller? (s/n)\n");
                 scanf(" %c", &respuesta);
                 if (respuesta == 'Si') {
-                    preguntarAnysThriller();
+                    preguntarThriller();
                 }
                 break;
             case 5: // Ciencia Ficción
                 printf("La serie incluye temas de ciencia-ficción? (s/n)\n");
                 scanf(" %c", &respuesta);
                 if (respuesta == 'Si') {
-                    preguntarAnysCienciaFiccion();
+                    preguntarCienciaFiccion();
                 }
                 break;
         }
