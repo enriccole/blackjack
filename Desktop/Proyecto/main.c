@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-#define NUM_PREGUNTAS 6 // Número total de preguntas por categoría
-
-// Funciones para preguntar sobre los años de las series
+#define NUM_PREGUNTAS 6 
 void preguntarAnysComedia() {
     char respuesta;
     printf("¿De qué año se inventó la comedia? (a) 500 a.C. (b) 1000 d.C. (c) 1500 d.C.\n");
@@ -93,42 +90,42 @@ void preguntesInicials(int usadas[]) {
             case 0: // Comedia
                 printf("La serie que estás pensando es de comedia? (s/n)\n");
                 scanf(" %c", &respuesta);
-                if (respuesta == 's') {
+                if (respuesta == 'Si') {
                     preguntarAnysComedia();
                 }
                 break;
             case 1: // Acción
                 printf("La serie que estás pensando es de acción? (s/n)\n");
                 scanf(" %c", &respuesta);
-                if (respuesta == 's') {
+                if (respuesta == 'Si') {
                     preguntarAnysAccion();
                 }
                 break;
             case 2: // Drama
                 printf("La serie que estás pensando es un drama? (s/n)\n");
                 scanf(" %c", &respuesta);
-                if (respuesta == 's') {
+                if (respuesta == 'Si') {
                     preguntarAnysDrama();
                 }
                 break;
             case 3: // Romántica
                 printf("La serie tiene una trama romántica? (s/n)\n");
                 scanf(" %c", &respuesta);
-                if (respuesta == 's') {
+                if (respuesta == 'Si') {
                     preguntarAnysRomantica();
                 }
                 break;
             case 4: // Thriller
                 printf("La serie es un thriller? (s/n)\n");
                 scanf(" %c", &respuesta);
-                if (respuesta == 's') {
+                if (respuesta == 'Si') {
                     preguntarAnysThriller();
                 }
                 break;
             case 5: // Ciencia Ficción
                 printf("La serie incluye temas de ciencia-ficción? (s/n)\n");
                 scanf(" %c", &respuesta);
-                if (respuesta == 's') {
+                if (respuesta == 'Si') {
                     preguntarAnysCienciaFiccion();
                 }
                 break;
